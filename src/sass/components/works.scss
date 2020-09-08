@@ -25,6 +25,11 @@
   &-boxes {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 900px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
   &__box {
     color: $primary-text-color;
@@ -38,6 +43,10 @@
 
     @media screen and (max-width: 1200px) {
       width: 250px;
+    }
+
+    @media screen and (max-width: 900px) {
+      margin-bottom: 10px;
     }
 
     &:hover {

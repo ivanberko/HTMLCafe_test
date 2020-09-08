@@ -31,7 +31,12 @@ a {
 
 @media screen and (max-width: 1200px) {
   .container {
-    width: 900px;
+    width: 880px;
+  }
+}
 
+@media screen and (max-width: 900px) {
+  .container {
+    width: 748px;
   }
 }

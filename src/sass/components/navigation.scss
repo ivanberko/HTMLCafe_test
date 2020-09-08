@@ -20,8 +20,12 @@
       font-size: 13px;
       font-weight: 600;
 
-      @media screen and (max-width: 1200px){
+      @media screen and (max-width: 1200px) {
         margin-right: 20px;
+      }
+
+      @media screen and (max-width: 900px) {
+        display: none;
       }
 
       li {

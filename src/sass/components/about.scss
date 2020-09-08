@@ -59,6 +59,11 @@
         margin: 5px;
       }
 
+      @media screen and (max-width: 900px) {
+        width: 150px;
+        height: 150px;
+      }
+
       &-count {
         color: $primary-active-color;
         font-size: 40px;

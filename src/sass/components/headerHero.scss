@@ -18,6 +18,13 @@
     min-height: 450px;
   }
 
+  @media screen and (max-width: 900px) {
+    width: auto;
+    background-image: none;
+    min-height: 250px;
+    margin: 0 auto;
+  }
+
   .hero-search {
     width: 50%;
 
@@ -28,6 +35,11 @@
       @media screen and (max-width: 1200px) {
         font-size: 40px;
       }
+
+      @media screen and (max-width: 900px) {
+        margin: 0 auto;
+        font-size: 30px;
+      }
     }
 
     &__input {
@@ -36,6 +48,10 @@
       width: 480px;
       border-radius: 4px;
       background-color: #fff;
+
+      @media screen and (max-width: 900px) {
+        border: 1px solid $primary-active-color;
+      }
 
       &::before {
         content: '';
@@ -81,8 +97,19 @@
     font-size: 18px;
     font-weight: 600;
 
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      font-size: 10px;
+      font-weight: 600;
+      height: auto;
+      padding: 14px 0;
+      background-color: $primary-text-color;
+      color: $primary-white-color;
+    }
+
     &__phone {
       display: flex;
+      align-items: center;
 
       &::before {
         content: '';
@@ -102,6 +129,7 @@
 
     &__location {
       display: flex;
+      align-items: center;
 
       &::before {
         content: '';

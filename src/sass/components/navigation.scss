@@ -1,0 +1,54 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
+
+  .logo {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 27px;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+
+    .navbar {
+      display: flex;
+      margin-right: 100px;
+      font-size: 13px;
+      font-weight: 600;
+
+      @media screen and (max-width: 1200px){
+        margin-right: 20px;
+      }
+
+      li {
+        transition: 0.3s linear;
+        &:hover {
+          color: $primary-active-color;
+        }
+        &:not(:last-child) {
+          margin-right: 32px;
+        }
+      }
+    }
+
+    .site-nav-btn {
+      background-color: $primary-white-color;
+      color: $primary-text-color;
+      border: none;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 12px 22px;
+      cursor: pointer;
+      transition: 0.3s linear;
+
+      &:hover {
+        background-color: $primary-active-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.agents {
+  background-color: $primary-background-color;
+
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 26px;
+    padding-top: 50px;
+
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
+  }
+
+  &__desc {
+    width: 356px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 56px;
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    margin-bottom: 100px;
+  }
+
+  &__card {
+    width: 351px;
+    background-color: $primary-white-color;
+    box-shadow: 0px 0px 20px 0px rgba(1, 1, 0, 0.15);
+
+    &-title {
+      font-size: 14px;
+      font-weight: 600;
+      padding-top: 26px;
+      margin-left: 22px;
+      margin-bottom: 26px;
+
+      @media screen and (max-width: 1200px) {
+        padding-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
+
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 22px;
+      padding-bottom: 36px;
+    }
+    &-name {
+      color: $primary-active-color;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    &-social {
+      display: flex;
+
+      a:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}

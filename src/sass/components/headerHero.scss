@@ -1,0 +1,122 @@
+.header {
+  margin-bottom: 160px;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 60px;
+  }
+}
+
+.header-hero {
+  display: flex;
+  align-items: center;
+  min-height: 631px;
+  background-image: url(../images/bg-header/Path.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+
+  @media screen and (max-width: 1200px) {
+    min-height: 450px;
+  }
+
+  .hero-search {
+    width: 50%;
+
+    &__title {
+      font-size: 54px;
+      margin-bottom: 48px;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 40px;
+      }
+    }
+
+    &__input {
+      display: flex;
+      height: 70px;
+      width: 480px;
+      border-radius: 4px;
+      background-color: #fff;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 28px;
+        background-image: url(../images/icons/Search.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      input {
+        width: 364px;
+        color: $primary-text-color;
+        font-size: 15px;
+        font-weight: 400;
+        border: none;
+        outline: none;
+      }
+
+      button {
+        width: 116px;
+        background-color: $primary-active-color;
+        color: $primary-text-color;
+        border: none;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+
+  .hero-contacts {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: flex-end;
+    background-color: $primary-active-color;
+    font-size: 18px;
+    font-weight: 600;
+
+    &__phone {
+      display: flex;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/icons/Phone.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-right: 32px;
+
+        @media screen and (max-width: 1200px) {
+          padding-right: 12px;
+        }
+      }
+    }
+
+    &__location {
+      display: flex;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/icons/Local.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-right: 32px;
+
+        @media screen and (max-width: 1200px) {
+          padding-right: 12px;
+        }
+      }
+    }
+  }
+}

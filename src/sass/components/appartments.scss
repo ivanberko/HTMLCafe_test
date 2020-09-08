@@ -1,0 +1,181 @@
+.appartments {
+  background-color: $primary-background-color;
+
+  &__title {
+    font-size: 40px;
+    padding-top: 60px;
+    margin-bottom: 78px;
+
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
+  }
+
+  &-btn-viewAll {
+    background-color: $primary-white-color;
+    color: $primary-text-color;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s linear;
+
+    &:hover {
+      background-color: $primary-active-color;
+    }
+  }
+
+  &__search {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 84px;
+
+    @media screen and (max-width: 1200px) {
+      justify-content: center;
+    }
+
+    &-input {
+      display: flex;
+      height: 70px;
+      width: 480px;
+      border-radius: 4px 0 0 4px;
+      background-color: $primary-white-color;
+      margin-right: 40px;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 28px;
+        background-image: url(../images/icons/Search.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      input {
+        width: 364px;
+        color: $primary-text-color;
+        font-size: 15px;
+        font-weight: 400;
+        border: none;
+        outline: none;
+      }
+
+      button {
+        width: 116px;
+        background-color: $primary-active-color;
+        color: $primary-text-color;
+        border: none;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1200px) {
+      justify-content: space-around;
+    }
+  }
+
+  &-card {
+    width: 351px;
+    background-color: $primary-white-color;
+    box-shadow: 0px 0px 20px 0px rgba(1, 1, 0, 0.15);
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1200px) {
+      width: 251px;
+    }
+
+    &__addres {
+      font-size: 14px;
+      font-weight: 600;
+      padding-top: 26px;
+      margin-left: 22px;
+      margin-bottom: 26px;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 10px;
+        padding-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 22px;
+      padding-bottom: 36px;
+
+      @media screen and (max-width: 1200px) {
+        padding-bottom: 12px;
+      }
+
+      &-price {
+        color: $primary-active-color;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      &-desc {
+        display: flex;
+        color: #919eb1;
+        font-size: 13px;
+        font-weight: 400;
+
+        &--ba,
+        &--bd {
+          display: flex;
+          align-items: center;
+        }
+
+        &--ba {
+          margin-right: 20px;
+
+          @media screen and (max-width: 1200px) {
+            margin-right: 10px;
+          }
+        }
+
+        &--ba::before,
+        &--bd::before {
+          content: '';
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          margin-right: 12px;
+
+          @media screen and (max-width: 1200px) {
+            width: 12px;
+            height: 12px;
+          }
+        }
+
+        &--ba::before {
+          background-image: url(../images/icons/shower.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+
+        &--bd::before {
+          background-image: url(../images/icons/bed.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
